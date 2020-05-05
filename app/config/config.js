@@ -23,9 +23,9 @@ process.env.GOOGLE_APPLICATION_CREDENTIALS = process.env.GOOGLE_APPLICATION_CRED
 let urlDB;
 
 if( process.env.NODE_ENV === 'dev'){
-    urlDB = 'mongodb://localhost:27018/someCollection'
+    urlDB = 'mongodb://localhost:27018/covid'
 }else{
-    urlDB = 'yourMongoAtlasDBConnection'
+    urlDB = 'mongodb+srv://kenjiman:p9YxtOCvGmOobqaJ@llevomiscuentasdb-2xdud.mongodb.net/covid'
 }
 
 process.env.URLDB = urlDB;
